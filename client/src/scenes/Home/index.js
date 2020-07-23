@@ -1,29 +1,22 @@
 import React from 'react';
-
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Competences from './components/Competences'
 
 export default class Home extends React.Component {
     render() {
         return (
-            <Container>
-                <Row>
-                    <Col><Header /></Col>
-                </Row>
+            <Container style={{textAlign: 'center'}}>
                 <Row>
                     <Col>
-                        Home page
-                    </Col>
-                    <Col>
-                        Test
+                        <h2>Mes compétences</h2>
                     </Col>
                 </Row>
                 <Row>
-                    <Col><Footer /></Col>
+                    <Col>
+                        <Competences />
+                    </Col>
                 </Row>
             </Container>
         )

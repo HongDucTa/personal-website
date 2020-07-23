@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Application mobile aio",
+        "image": "aio.png",
+        "description": "Application mobile réalisée avec le framework Ionic dans le cadre d'un projet scolaire pour la start-up aio",
+        "project_url": "",
+        "github_url": ""
+    },
+    {
+        "title": "Site web sous React",
+        "image": "site.png",
+        "description": "Site permettant d'effectuer des recherches sur des hôtels/restaurants récupérés sur relaischateaux.com",
+        "project_url": "https://hongduc-ta-hotels-restaurants.netlify.com/",
+        "github_url": "https://github.com/HongDucTa/castle"
+    },
+    {
+        "title": "Application WPF",
+        "image": "Zombillenium-1.png",
+        "description": "Un logiciel de gestion fictif d'un parc d'attractions développé en C#",
+        "project_url": "",
+        "github_url": "https://github.com/HongDucTa/Zombillenium"
+    },
+    {
+        "title": "Puissance 4",
+        "image": "Puissance4-2.png",
+        "description": "Un petit Puissance 4 développé en C#",
+        "project_url": "",
+        "github_url": "https://github.com/HongDucTa/Puissance-4"
+    }
+]
