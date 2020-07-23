@@ -27,4 +27,13 @@ describe('Navigation', () => {
         cy.url()
             .should('include','/formations')
     })
+
+    it('Visits page Simulateur intérêts composés', () => {
+        cy.visit('/outils/interets-composes')
+        cy.get('[data-cy="outils"').click()
+        cy.get('[data-cy="interets-composes"]').click
+
+        cy.url()
+            .should('include','/outils/interets-composes')
+    })
 })

@@ -8,6 +8,7 @@ import CV from '../scenes/CV';
 import Experiences from '../scenes/Experiences';
 import Projets from '../scenes/Projets';
 import Formations from '../scenes/Formations';
+import CompoundInterestSimulator from '../scenes/CompoundInterestSimulator'
 
 export default class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
           <Route exact path='/experiences' component={Experiences} />
           <Route exact path='/projets' component={Projets} />
           <Route exact path='/formations' component={Formations} />
+          <Route exact path='/outils/interets-composes' component={CompoundInterestSimulator} />
         </Switch>
         <Footer />
       </div>
