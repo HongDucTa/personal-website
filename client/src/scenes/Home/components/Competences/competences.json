@@ -17,6 +17,6 @@
     },
     {
         "title": "Déploiement",
-        "items": ["Netlify", "AWS"]
+        "items": ["Netlify", "AWS", "Docker"]
     }
 ]
