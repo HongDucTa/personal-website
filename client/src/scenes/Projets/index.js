@@ -1,30 +1,36 @@
 import React from 'react'
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import { Grid, makeStyles } from '@material-ui/core'
 
 import projects from './projets.json'
-import Projet from './components/Projet'
+import Projet from './components/Projet.js'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
-export default class Projets extends React.Component {
-
-    render() {
-        console.log(process.cwd())
-        return (
-            <Container>
-                <Row lg="2">
-                    {
-                        projects.map((project) => {
-                            return (
-                                <Col lg="6">
-                                    <Projet project={project} />
-                                </Col>
-                            )
-                        })
-                    }
-                </Row>
-            </Container>
-        )
+const useStyles = makeStyles({
+    root: {
+        backgroundColor: 'white'
     }
+})
+
+export default function Projets() {
+    const classes = useStyles()
+
+    return (
+        <div className={classes.root}>
+            <Header />
+            <Grid container spacing={2}>
+                {
+                    projects.map((project) => {
+                        return (
+                            <Grid item xs="6">
+                                <Projet project={project} />
+                            </Grid>
+                        )
+                    })
+                }
+            </Grid>
+            <Footer />
+        </div>
+    )
 }

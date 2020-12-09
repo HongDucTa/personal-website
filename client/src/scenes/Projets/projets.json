@@ -1,5 +1,12 @@
 [
     {
+        "title": "Site vitrine personnel",
+        "image": "site-perso.png",
+        "description": "Site personnel réalisé avec React",
+        "project_url": "",
+        "github_url": "https://github.com/HongDucTa/personal-website"
+    },
+    {
         "title": "Application mobile aio",
         "image": "aio.png",
         "description": "Application mobile réalisée avec le framework Ionic dans le cadre d'un projet scolaire pour la start-up aio",

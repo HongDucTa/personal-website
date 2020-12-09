@@ -1,7 +1,7 @@
 describe('Navigation', () => {
     it('Visits home page', () => {
         cy.visit('/')
-        cy.contains('Mes compétences')
+        cy.contains('Compétences')
     })
 
     it('Visits page Projets', () => {

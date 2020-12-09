@@ -1,25 +1,35 @@
 import React from 'react'
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import ResponsiveEmbed from 'react-bootstrap/ResponsiveEmbed'
 
+import { Grid, makeStyles } from '@material-ui/core'
+
 import file from './images/cv.pdf'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
-export default class CV extends React.Component {
-
-    render() {
-        return (
-            <Container>
-                <Row>
-                    <Col align="center">
-                        <ResponsiveEmbed>
-                            <embed src={file} data-cy='file'/>
-                        </ResponsiveEmbed>
-                    </Col>
-                </Row>
-            </Container>
-        )
+const useStyles = makeStyles({
+    root: {
+        backgroundColor: 'white'
     }
+})
+
+export default function CV() {
+    const classes = useStyles()
+
+    return (
+        <div className={classes.root}>
+            <Header />
+            <Grid container>
+                <Grid item xs={3} />
+                <Grid item xs={6}>
+                    <ResponsiveEmbed>
+                        <embed src={file} data-cy='file' />
+                    </ResponsiveEmbed>
+                </Grid>
+                <Grid item xs={3} />
+            </Grid>
+            <Footer />
+        </div>
+    )
 }
